@@ -1,0 +1,10 @@
+package com.gluonmind.backend.repository;
+
+import com.gluonmind.backend.model.Subscriber;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.Optional;
+
+public interface SubscriberRepository extends MongoRepository<Subscriber, String> {
+    Optional<Subscriber> findByEmail(String email);
+}

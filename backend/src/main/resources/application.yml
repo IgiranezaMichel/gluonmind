@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: gluonmind-backend
+  data:
+    mongodb:
+      password: mongo
+      username: mongo
+      authentication-database: admin
+      database: gluonmind
+      port: 27017
+  mail:
+    host: ${MAIL_HOST:}
+    port: ${MAIL_PORT:}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: ${MAIL_SMTP_AUTH:true}
+          starttls:
+            enable: ${MAIL_SMTP_STARTTLS:true}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-me-please-change-me-please-32bytes}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}
+  admin:
+    username: ${ADMIN_USERNAME:superadmin}
+    password: ${ADMIN_PASSWORD:superadmin}
+    full-name: ${ADMIN_FULL_NAME:Super Admin}
+    email: ${ADMIN_EMAIL:admin@gluonmind.com}
+  notifications:
+    notify-subscribers-on-appointment: ${NOTIFY_SUBSCRIBERS_ON_APPOINTMENT:false}
+
+server:
+  port: ${PORT:8000}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
