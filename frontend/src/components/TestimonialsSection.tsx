@@ -5,7 +5,7 @@ import ScrollReveal, { staggerContainer, staggerItem } from "./ScrollReveal";
 const testimonials = [
   {
     name: "Sarah Chen",
-    role: "CTO, NovaTech Solutions",
+    role: "Founder, Terrabuild Construction",
     avatar: "SC",
     rating: 5,
     text: "GluonMind transformed our legacy infrastructure into a modern cloud-native platform. Their AI-driven approach cut our deployment time by 70% and dramatically improved system reliability.",
@@ -27,12 +27,9 @@ const testimonials = [
 ];
 
 const logos = [
-  "NovaTech",
-  "Streamline",
-  "DataPulse",
-  "CloudSync",
-  "Axiom AI",
-  "Vertex",
+  "Terrabuild",
+  "Amal Health",
+  "Connect Africa Countries",
 ];
 
 const TestimonialsSection = () => {
