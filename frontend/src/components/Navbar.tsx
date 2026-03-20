@@ -10,7 +10,6 @@ const navItems = [
   { label: "About", href: "/about" },
   { label: "Managed Apps", href: "/managed-apps" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "Book a Demo", href: "#booking" },
 ];
 
 const Navbar = () => {
@@ -156,7 +155,7 @@ const Navbar = () => {
             onClick={() => handleClick("#booking")}
             className="text-sm px-5 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:brightness-110 transition-all duration-200 shadow-md shadow-primary/20"
           >
-            Get Started
+            Book A Demo
           </button>
           <button
             type="button"
